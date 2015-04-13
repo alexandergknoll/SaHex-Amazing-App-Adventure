@@ -4,9 +4,9 @@ states_file.each_line do |line|
   State.create!(name: line.chomp)
 end
 
-category_path = File.expand_path('../seeds/category.txt', __FILE__)
-category_file = File.open(category_path, "r")
-category_file.each_line do |line|
+categories_path = File.expand_path('../seeds/categories.txt', __FILE__)
+categories_file = File.open(categories_path, "r")
+categories_file.each_line do |line|
   Category.create!(name: line.chomp)
 end
 
