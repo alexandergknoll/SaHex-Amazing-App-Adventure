@@ -1,0 +1,6 @@
+<div class='container'>
+  <h1>States:</h1>
+  <% @states.each do |state| %>
+    <p><a href= '/states/<%= state.name %>'><%= state.name%></a></p>
+  <% end %>
+</div>

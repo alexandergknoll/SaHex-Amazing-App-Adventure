@@ -1,4 +1,7 @@
 get '/establishments' do
-  # Look in app/views/index.erb
-  erb :establishments
+  erb :"establishments/index"
+end
+
+get '/establishments/:establishment_id' do
+  erb :"establishments/show"
 end

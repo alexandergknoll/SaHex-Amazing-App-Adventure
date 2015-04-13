@@ -1,0 +1,6 @@
+<div class='container'>
+  <h1>Establishments in <% @city.name %>:</h1>
+  <% @establishments.each do |establishment| %>
+    <p><%= establishment.category.name %>: <a href= '/establishments/<%= establishment.id %>'><%= establishment.name%></a></p>
+  <% end %>
+</div>
