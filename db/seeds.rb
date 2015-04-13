@@ -10,6 +10,10 @@ categories_file.each_line do |line|
   Category.create!(name: line.chomp)
 end
 
+500.times do
+  City.create!(name: Faker::Address.city, state: State.all.sample)
+end
+
 # p State.all.first(10)
 # cities_file
 
