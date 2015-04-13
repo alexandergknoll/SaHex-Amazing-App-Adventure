@@ -14,7 +14,11 @@ end
   City.create!(name: Faker::Address.city, state: State.all.sample)
 end
 
-# p State.all.first(10)
-# cities_file
-
-# categories_path = File.open(, "r")
+10000.times do
+  Establishment.create!(name: Faker::Company.name,
+                        address: Faker::Address.street_address,
+                        hours: "Monday - Friday 9:00 AM - 5:00 PM",
+                        phone: Faker::PhoneNumber.cell_phone,
+                        city: City.all.sample,
+                        category: Category.all.sample)
+end
