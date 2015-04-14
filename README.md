@@ -1,4 +1,4 @@
-# SaHex-Amazing-App-Adventure
+# Reviews
 CRUD practice
 
 ## Schema:
